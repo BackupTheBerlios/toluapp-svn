@@ -174,7 +174,7 @@ function split (s,t)
 end
 
 -- splits a string using a pattern, considering the spacial cases of C code (templates, function parameters, etc)
--- pattern can't contain the '^' (as used to identify the begining of the line)
+-- pattern can't contain the '^' (as used to identify the beginning of the line)
 -- also strips whitespace
 function split_c_tokens(s, pat)
 

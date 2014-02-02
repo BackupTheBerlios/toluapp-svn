@@ -386,7 +386,7 @@ TOLUA_API int tolua_register_gc (lua_State* L, int lo)
 }
 
 /* Register a usertype
-	* It creates the correspoding metatable in the registry, for both 'type' and 'const type'.
+	* It creates the corresponding metatable in the registry, for both 'type' and 'const type'.
 	* It maps 'const type' as being also a 'type'
 */
 TOLUA_API void tolua_usertype (lua_State* L, const char* type)

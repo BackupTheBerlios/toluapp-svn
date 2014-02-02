@@ -1,6 +1,18 @@
-tolua++ for Debian
-------------------
+With reference to the Debian Policy Chapter 10.2
 
-<possible notes regarding this package - if none, delete this file>
+The reason for compiling with the -fPIC flag, even though the binary package
+will only contain a static library, is that this static library will be used
+to build shared libraries (lua modules, or with a terminology common with
+other applications, plug-ins).
+Without instructing the compiler to use position independent code in the
+static library, when the compiler will attempt linking this library to make
+the shared libraries relocation will fail.
 
- -- Ariel Manzur <puntob@gmail.com>, Thu, 30 Dec 2004 11:59:14 -0300
+Alternatively, there is an option given upstream to build a shared library
+instead of the static one.
+However this is badly supported upstream, as a matter of fact this "shared"
+library doesn't even have a soname.
+Therefore I preferred to include a static library and compile it with position
+independent code.
+
+ -- Cesare Tirabassi <norsetto@ubuntu.com>  Sat, 25 Jul 2009 22:08:28 +0200

@@ -17,7 +17,7 @@
 --   line = line text
 classVerbatim = {
  line = '',
-	cond = nil,    -- condition: where to generate the code (s=suport, r=register)
+	cond = nil,    -- condition: where to generate the code (s=support, r=register)
 }
 classVerbatim.__index = classVerbatim
 setmetatable(classVerbatim,classFeature)
@@ -66,7 +66,7 @@ function Verbatim (l,cond)
  if strsub(l,1,1) == "'" then
   l = strsub(l,2)
  elseif strsub(l,1,1) == '$' then
-  cond = 'sr'       -- generates in both suport and register fragments
+  cond = 'sr'       -- generates in both support and register fragments
   l = strsub(l,2)
  end
  return _Verbatim {

@@ -297,7 +297,7 @@ function Package (name,fn)
  until nsubst==0
 
  -- deal with renaming directive
- repeat -- I don't know why this is necesary
+ repeat -- I don't know why this is necessary
 	code,nsubst = gsub(code,'\n%s*%$renaming%s*(.-)%s*\n', function (r) appendrenaming(r) return "\n" end)
  until nsubst == 0
 

@@ -1378,7 +1378,7 @@ to be a string with the complete C type of the object (including namespaces, etc
 <h4>tolua.inherit (<i>table</i>, <i>var</i>)</h4> (new on <b>tolua++</b>)
 
 Causes <b>tolua++</b> to recognise <i>table</i> as an object with the same type as <i>var</i>,
-and to use <i>var</i> when necesary. For example, consider this method:
+and to use <i>var</i> when necessary. For example, consider this method:
 <p>
 
 <ul><tt>void set_parent(Widget* p_parent);</tt></ul>
@@ -1397,7 +1397,7 @@ set_parent(lua_widget);
 </pre>
 
 Remember that this will only cause the table to be recognised as type 'Widget' when
-necesary. To be able to access Widget's methods, you'll have to implement your own
+necessary. To be able to access Widget's methods, you'll have to implement your own
 object system. A simple example:
 <p>
 
@@ -1422,7 +1422,7 @@ methods.
 <p>
 
 <b>Note:</b> the current implementation (as of version 1.0.6) stores the C instance
-inside the lua table on the field ".c_instance", and looks that up when necesary. This
+inside the lua table on the field ".c_instance", and looks that up when necessary. This
 might change in the future, so it is recommended to use an alternative way to store the
 C instance to use with your own object system.
 
@@ -1744,7 +1744,7 @@ with nested template declarations.
 
 When passing a full userdata to a function that accepts light userdata parameters (void*),
 the <b>tolua++</b> library function <tt>tolua_touserdata</tt> will detect the full userdata and dereference
-the void** pointer if necesary. This is a change on the function's behaviour (which used to return the pointer as-is). This allows us to pass pointers to objects to a function that accepts
+the void** pointer if necessary. This is a change on the function's behaviour (which used to return the pointer as-is). This allows us to pass pointers to objects to a function that accepts
 void* pointers. Note that this was a problem when switching from <b>toLua</b> version 4 to version 5 (and <b>tolua++</b> versions &lt; 1.0.90).
 
 <h4>toLua 4</h4>

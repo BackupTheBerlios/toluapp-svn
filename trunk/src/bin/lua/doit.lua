@@ -35,7 +35,7 @@ function doit ()
 		end
 	end
 
-	-- parse table with extra paramters
+	-- parse table with extra parameters
 	parse_extra()
 
 	-- do this after setting the package name

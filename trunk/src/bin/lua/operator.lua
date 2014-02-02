@@ -212,7 +212,7 @@ function Operator (d,k,a,c)
  	f.cast_operator = true
  end
  if f.kind == '[]' and ref=='&' and f.const~='const' then
-  Operator(d,'&'..k,a,c) 	-- create correspoding set operator
+  Operator(d,'&'..k,a,c) 	-- create corresponding set operator
  end
  return _Operator(f)
 end
