@@ -375,7 +375,7 @@ end
 
 -- called to output an error message
 function output_error_hook(...)
-	return string.format(...)
+	return string.format(unpack(arg))
 end
 
 -- custom pushers

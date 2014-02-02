@@ -47,7 +47,7 @@ function classCode:register (pre)
  end
 
  -- pad to 16 bytes
- local npad = 16 - (#s % 16)
+ local npad = 16 - math.mod(string.len(s), 16)
  local spad = ""
  for i=1,npad do
  	spad = spad .. "-"
